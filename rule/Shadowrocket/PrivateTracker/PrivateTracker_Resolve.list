@@ -1,12 +1,12 @@
 # NAME: PrivateTracker
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-06-04 03:21:05
-# DOMAIN: 118
+# UPDATED: 2026-10-03 06:41:25
+# DOMAIN: 130
 # DOMAIN-KEYWORD: 4
-# DOMAIN-SUFFIX: 123
+# DOMAIN-SUFFIX: 124
 # IP-CIDR: 3
-# TOTAL: 248
+# TOTAL: 261
 DOMAIN,004430.xyz
 DOMAIN,021912.xyz
 DOMAIN,1337.abcvg.info
@@ -22,9 +22,12 @@ DOMAIN,bt1.archive.org
 DOMAIN,bt2.archive.org
 DOMAIN,bvarf.tracker.sh
 DOMAIN,cerf.cs.umd.edu
+DOMAIN,chdbits.xyz
 DOMAIN,coeus.torrentonline.cc
+DOMAIN,cspt.top
 DOMAIN,evan.im
 DOMAIN,exodus.desync.com
+DOMAIN,hhanclub.net
 DOMAIN,ipv4announce.sktorrent.eu
 DOMAIN,leet-tracker.moe
 DOMAIN,martin-gebhardt.eu
@@ -40,6 +43,8 @@ DOMAIN,opentor.org
 DOMAIN,orgtgju.org
 DOMAIN,p4p.arenabg.com
 DOMAIN,pybittrack.retiolus.net
+DOMAIN,qingwapt.com
+DOMAIN,qingwapt.org
 DOMAIN,rekcart.duckdns.org
 DOMAIN,retracker.hotplug.ru
 DOMAIN,seedpeer.net
@@ -66,7 +71,10 @@ DOMAIN,tracker.bittor.pw
 DOMAIN,tracker.bluefrog.pw
 DOMAIN,tracker.breizh.pm
 DOMAIN,tracker.bt4g.com
+DOMAIN,tracker.cinefiles.info
 DOMAIN,tracker.corpscorp.online
+DOMAIN,tracker.cspt.cc
+DOMAIN,tracker.cspt.top
 DOMAIN,tracker.ddunlimited.net
 DOMAIN,tracker.dhitechnical.com
 DOMAIN,tracker.dler.com
@@ -77,6 +85,7 @@ DOMAIN,tracker.flatuslifir.is
 DOMAIN,tracker.fnix.net
 DOMAIN,tracker.gcrenwp.top
 DOMAIN,tracker.gmi.gd
+DOMAIN,tracker.hhanclub.net
 DOMAIN,tracker.hismz.cn
 DOMAIN,tracker.iperson.xyz
 DOMAIN,tracker.kuroy.me
@@ -93,9 +102,12 @@ DOMAIN,tracker.playground.ru
 DOMAIN,tracker.plx.im
 DOMAIN,tracker.pmman.tech
 DOMAIN,tracker.privateseedbox.xyz
+DOMAIN,tracker.ptchdbits.co
 DOMAIN,tracker.publictracker.xyz
+DOMAIN,tracker.qingwapt.com
 DOMAIN,tracker.qingwapt.org
 DOMAIN,tracker.qu.ax
+DOMAIN,tracker.rainbowisland.co
 DOMAIN,tracker.renfei.net
 DOMAIN,tracker.sharebro.in
 DOMAIN,tracker.skyts.net
@@ -246,6 +258,7 @@ DOMAIN-SUFFIX,torrentseeds.org
 DOMAIN-SUFFIX,totheglory.im
 DOMAIN-SUFFIX,trontv.com
 DOMAIN-SUFFIX,u2.dmhy.org
+DOMAIN-SUFFIX,ubits.club
 DOMAIN-SUFFIX,uhdbits.org
 DOMAIN-SUFFIX,xauat6.edu.cn
 DOMAIN-KEYWORD,announce

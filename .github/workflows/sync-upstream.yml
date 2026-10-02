@@ -1,0 +1,97 @@
+name: Sync fork with upstream
+
+# 每天 19:00 UTC = 次日 03:00 北京时间 (UTC+8)
+on:
+  schedule:
+    - cron: '0 19 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+env:
+  UPSTREAM: https://github.com/blackmatrix7/ios_rule_script.git
+  BRANCH: master
+  # 同步时保留、不被上游覆盖的文件（上游仓库中没有的文件）
+  PRESERVE: >-
+    .github/workflows/sync-upstream.yml
+    CLAUDE.md
+    .github/scripts
+    .github/custom-rules
+  # 上游同步后重新套用本地自定义域名（.github/custom-rules/*.domains）
+  APPLY_SCRIPT: .github/scripts/apply_custom_rules.py
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 目标分支
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.BRANCH }}
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 备份需要保留的文件
+        run: |
+          mkdir -p /tmp/preserve
+          for f in $PRESERVE; do
+            if [ -d "$f" ]; then
+              mkdir -p "/tmp/preserve/$(dirname "$f")"
+              cp -R "$f" "/tmp/preserve/$f"
+              echo "已备份目录 $f"
+            elif [ -f "$f" ]; then
+              mkdir -p "/tmp/preserve/$(dirname "$f")"
+              cp "$f" "/tmp/preserve/$f"
+              echo "已备份文件 $f"
+            else
+              echo "跳过（不存在）$f"
+            fi
+          done
+
+      - name: 拉取上游并重置到上游状态
+        run: |
+          git remote add upstream "$UPSTREAM"
+          git fetch upstream "$BRANCH" --depth=1
+          git checkout -B "$BRANCH" "upstream/$BRANCH"
+
+      - name: 恢复保留文件
+        run: |
+          for f in $PRESERVE; do
+            if [ -d "/tmp/preserve/$f" ]; then
+              rm -rf "$f"
+              mkdir -p "$(dirname "$f")"
+              cp -R "/tmp/preserve/$f" "$f"
+              echo "已恢复目录 $f"
+            elif [ -f "/tmp/preserve/$f" ]; then
+              mkdir -p "$(dirname "$f")"
+              cp "/tmp/preserve/$f" "$f"
+              echo "已恢复文件 $f"
+            fi
+          done
+
+      - name: 重新套用本地自定义域名
+        run: |
+          if [ ! -f "$APPLY_SCRIPT" ]; then
+            echo "未找到 $APPLY_SCRIPT，跳过"
+            exit 0
+          fi
+          python3 "$APPLY_SCRIPT"
+
+      - name: 提交并推送
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add -A
+          if git diff --cached --quiet; then
+            echo "与上游一致，无需推送"
+          else
+            git commit -m "chore: sync with upstream $(date -u '+%F %T UTC')"
+            git push origin "HEAD:$BRANCH" --force
+            echo "已推送同步结果"
+          fi
+          echo "上游版本：$(git rev-parse --short upstream/$BRANCH)"

@@ -1,0 +1,5 @@
+# Gemini API 与 Cloud Code / Code Assist 自定义规则
+DOMAIN-SUFFIX,aiplatform.googleapis.com
+DOMAIN-SUFFIX,cloudaicompanion.googleapis.com
+DOMAIN-SUFFIX,cloudcode-pa.googleapis.com
+DOMAIN-KEYWORD,cloudcode

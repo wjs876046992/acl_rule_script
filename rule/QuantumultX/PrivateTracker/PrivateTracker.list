@@ -1,12 +1,12 @@
 # NAME: PrivateTracker
 # AUTHOR: blackmatrix7
 # REPO: https://github.com/blackmatrix7/ios_rule_script
-# UPDATED: 2026-06-04 03:21:05
-# HOST: 118
+# UPDATED: 2026-10-11 06:06:18
+# HOST: 130
 # HOST-KEYWORD: 4
-# HOST-SUFFIX: 123
+# HOST-SUFFIX: 124
 # IP-CIDR: 3
-# TOTAL: 248
+# TOTAL: 261
 HOST,004430.xyz,PrivateTracker
 HOST,021912.xyz,PrivateTracker
 HOST,1337.abcvg.info,PrivateTracker
@@ -22,9 +22,12 @@ HOST,bt1.archive.org,PrivateTracker
 HOST,bt2.archive.org,PrivateTracker
 HOST,bvarf.tracker.sh,PrivateTracker
 HOST,cerf.cs.umd.edu,PrivateTracker
+HOST,chdbits.xyz,PrivateTracker
 HOST,coeus.torrentonline.cc,PrivateTracker
+HOST,cspt.top,PrivateTracker
 HOST,evan.im,PrivateTracker
 HOST,exodus.desync.com,PrivateTracker
+HOST,hhanclub.net,PrivateTracker
 HOST,ipv4announce.sktorrent.eu,PrivateTracker
 HOST,leet-tracker.moe,PrivateTracker
 HOST,martin-gebhardt.eu,PrivateTracker
@@ -40,6 +43,8 @@ HOST,opentor.org,PrivateTracker
 HOST,orgtgju.org,PrivateTracker
 HOST,p4p.arenabg.com,PrivateTracker
 HOST,pybittrack.retiolus.net,PrivateTracker
+HOST,qingwapt.com,PrivateTracker
+HOST,qingwapt.org,PrivateTracker
 HOST,rekcart.duckdns.org,PrivateTracker
 HOST,retracker.hotplug.ru,PrivateTracker
 HOST,seedpeer.net,PrivateTracker
@@ -66,7 +71,10 @@ HOST,tracker.bittor.pw,PrivateTracker
 HOST,tracker.bluefrog.pw,PrivateTracker
 HOST,tracker.breizh.pm,PrivateTracker
 HOST,tracker.bt4g.com,PrivateTracker
+HOST,tracker.cinefiles.info,PrivateTracker
 HOST,tracker.corpscorp.online,PrivateTracker
+HOST,tracker.cspt.cc,PrivateTracker
+HOST,tracker.cspt.top,PrivateTracker
 HOST,tracker.ddunlimited.net,PrivateTracker
 HOST,tracker.dhitechnical.com,PrivateTracker
 HOST,tracker.dler.com,PrivateTracker
@@ -77,6 +85,7 @@ HOST,tracker.flatuslifir.is,PrivateTracker
 HOST,tracker.fnix.net,PrivateTracker
 HOST,tracker.gcrenwp.top,PrivateTracker
 HOST,tracker.gmi.gd,PrivateTracker
+HOST,tracker.hhanclub.net,PrivateTracker
 HOST,tracker.hismz.cn,PrivateTracker
 HOST,tracker.iperson.xyz,PrivateTracker
 HOST,tracker.kuroy.me,PrivateTracker
@@ -93,9 +102,12 @@ HOST,tracker.playground.ru,PrivateTracker
 HOST,tracker.plx.im,PrivateTracker
 HOST,tracker.pmman.tech,PrivateTracker
 HOST,tracker.privateseedbox.xyz,PrivateTracker
+HOST,tracker.ptchdbits.co,PrivateTracker
 HOST,tracker.publictracker.xyz,PrivateTracker
+HOST,tracker.qingwapt.com,PrivateTracker
 HOST,tracker.qingwapt.org,PrivateTracker
 HOST,tracker.qu.ax,PrivateTracker
+HOST,tracker.rainbowisland.co,PrivateTracker
 HOST,tracker.renfei.net,PrivateTracker
 HOST,tracker.sharebro.in,PrivateTracker
 HOST,tracker.skyts.net,PrivateTracker
@@ -246,6 +258,7 @@ HOST-SUFFIX,torrentseeds.org,PrivateTracker
 HOST-SUFFIX,totheglory.im,PrivateTracker
 HOST-SUFFIX,trontv.com,PrivateTracker
 HOST-SUFFIX,u2.dmhy.org,PrivateTracker
+HOST-SUFFIX,ubits.club,PrivateTracker
 HOST-SUFFIX,uhdbits.org,PrivateTracker
 HOST-SUFFIX,xauat6.edu.cn,PrivateTracker
 HOST-KEYWORD,announce,PrivateTracker

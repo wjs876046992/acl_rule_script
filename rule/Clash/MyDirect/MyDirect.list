@@ -1,0 +1,12 @@
+# NAME: MyDirect
+# AUTHOR: self-maintained
+# REPO: https://github.com/wjs876046992/acl_rule_script
+# DESC: 个人自定义「强制直连」规则集。这里的域名不走任何代理。
+# NOTE: 本目录已加入 .github/workflows/sync-upstream.yml 的 PRESERVE，
+#       上游同步不会覆盖。改完 git push 即可，无需重新部署 Worker。
+# 用法：每行一条，支持 DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP-CIDR
+#       ⚠️ 不支持 MATCH / RULE-SET / SUB-RULE（classical 类型会丢弃并告警）
+#       ℹ️ `DOMAIN-SUFFIX,a.b` 同时命中 `a.b` 本身与其全部子域
+#          （mihomo: strings.HasSuffix(domain, "."+suffix) || domain == suffix）
+# TOTAL: 1
+DOMAIN-SUFFIX,onecom-cloud.one

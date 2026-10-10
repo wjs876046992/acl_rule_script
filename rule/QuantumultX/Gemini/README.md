@@ -12,15 +12,15 @@ Gemini规则由《RULE GENERATOR 规则生成器》自动生成。
 
 ## 规则统计
 
-最后更新时间：2025-06-06 09:20:02
+最后更新时间：2026-10-11 06:06:18
 
 各类型规则统计：
 | 类型 | 数量(条)  | 
 | ---- | ----  |
 | HOST | 3  | 
-| HOST-KEYWORD | 3  | 
-| HOST-SUFFIX | 7  | 
-| TOTAL | 13  | 
+| HOST-KEYWORD | 4  |
+| HOST-SUFFIX | 10  |
+| TOTAL | 17  |
 
 
 ## QuantumultX 

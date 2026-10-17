@@ -1,0 +1,20 @@
+# 本地自定义域名：每次上游同步后由 .github/scripts/apply_custom_rules.py 重新写入
+# 每行一个域名，# 开头为注释。脚本会自动判断 DOMAIN / DOMAIN-SUFFIX 归属与去重。
+audiences.me
+t.audiences.me
+tracker.cinefiles.info
+hhanclub.net
+tracker.hhanclub.net
+tracker.ptchdbits.co
+tracker.rainbowisland.co
+chdbits.xyz
+tracker.qingwapt.org
+tracker.qingwapt.com
+qingwapt.org
+qingwapt.com
+tracker.cspt.top
+tracker.cspt.cc
+cspt.top
+tracker.totheglory.im
+totheglory.im
+DOMAIN-SUFFIX,ubits.club

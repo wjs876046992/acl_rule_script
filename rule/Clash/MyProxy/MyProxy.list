@@ -6,5 +6,4 @@
 #       上游同步不会覆盖。改完 git push 即可，无需重新部署 Worker。
 # 用法：每行一条，支持 DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP-CIDR
 #       ⚠️ 不支持 MATCH / RULE-SET / SUB-RULE（classical 类型会丢弃并告警）
-# TOTAL: 1
-DOMAIN-SUFFIX,nicept.net
+# TOTAL: 0

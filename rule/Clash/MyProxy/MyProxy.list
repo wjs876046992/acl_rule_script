@@ -1,0 +1,9 @@
+# NAME: MyProxy
+# AUTHOR: self-maintained
+# REPO: https://github.com/wjs876046992/acl_rule_script
+# DESC: 个人自定义「走代理」规则集。这里的域名交由客户端选择的代理组处理。
+# NOTE: 本目录已加入 .github/workflows/sync-upstream.yml 的 PRESERVE，
+#       上游同步不会覆盖。改完 git push 即可，无需重新部署 Worker。
+# 用法：每行一条，支持 DOMAIN / DOMAIN-SUFFIX / DOMAIN-KEYWORD / IP-CIDR
+#       ⚠️ 不支持 MATCH / RULE-SET / SUB-RULE（classical 类型会丢弃并告警）
+# TOTAL: 0
